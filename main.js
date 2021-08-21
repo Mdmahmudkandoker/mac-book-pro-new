@@ -67,12 +67,14 @@ function deliCostAdd(){
 	sumTotal();
 }
 function checkPromoCode(){
-	if(promoInput.value === 'discount'){
-		bestPrice = 1299 - (1299 * (15/100));
+	if(promoInput.value === 'stevekaku'){
+		bestPrice = 1299 - (1299 * (20/100));
 		promoInput.value = '';
 		sumTotal();
 	} else{
 		error.textContent = 'Invalid Promo Code'
-		setTimeout(function(){ error.textContent = ''}, 3000)
+		setTimeout(function(){ error.textContent = ''}, 1000)
 	}
+
+
 }
